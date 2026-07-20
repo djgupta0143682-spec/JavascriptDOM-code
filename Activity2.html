@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="Addition">Hello Dhiraj</h1>
+    <button onclick="Addnumbers()">Click me</button>
+    <script>
+      function Addnumbers() {
+        let a = parseInt(prompt("Enter the First number:"));
+        let b = parseInt(prompt("Enter the Second number:"));
+        let sum = a + b;
+        alert("The sum of the numbers is:" + sum);
+
+        document.getElementById("Addition").innerHTML =
+          "The sum of the numbers is:" + sum;
+      }
+    </script>
+  </body>
+</html>
