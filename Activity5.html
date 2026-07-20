@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="temp">Temperature</h1>
+    <button onclick="Temperat()">click me</button>
+    <script>
+      function Temperat() {
+        let a = parseFloat(prompt("Enter the Temperature in celsius"));
+        if (a >= 30) {
+          document.getElementById("temp").innerHTML = "Hot Weather";
+        } 
+        else {
+          document.getElementById("temp").innerHTML = "pleasant Weather";
+        }
+      }
+    </script>
+  </body>
+</html>
