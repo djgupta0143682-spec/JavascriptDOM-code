@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let age = parseFloat(prompt("Enter the age:"));
+      let Citizen = prompt("Are you a citizen? (true/false):");
+
+      if (Citizen === "false" || Citizen === null)
+        console.log("Not eligible: Must be a citizen.");
+      else if (age < 18)
+        console.log("Not eligible: Must be at least 18 years old.");
+      else if (age >= 18) console.log("Eligible to vote.");
+      else console.log("Error: Invalid input.");
+    </script>
+  </body>
+</html>
