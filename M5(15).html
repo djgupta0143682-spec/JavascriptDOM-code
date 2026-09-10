@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cube</title>
+  </head>
+  <body>
+    <script>
+      function cube() {
+        return function (n) {
+          return n * n * n;
+        };
+      }
+      let result = cube();
+      console.log(result(8));
+    </script>
+  </body>
+</html>
