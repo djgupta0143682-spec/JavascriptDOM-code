@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>even odd</title>
+  </head>
+  <body>
+    <script>
+      function even() {
+        return function (x) {
+          console.log("Even:", x % 2 == 0);
+        };
+      }
+      let result = even();
+      console.log(result(2));
+    </script>
+  </body>
+</html>
