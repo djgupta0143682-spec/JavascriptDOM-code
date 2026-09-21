@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Celsius to fahrenheit</title>
   </head>
   <body>
     <script>
-      function discount(rate) {
-        return function (price) {
-          return price - (price * rate) / 100;
+      function celsius() {
+        return function (cel) {
+          return (cel * 9) / 5 + 32;
         };
       }
-      let result = discount(5);
-      console.log(result(100));
+      let result = celsius();
+      document.write(result(100));
     </script>
   </body>
 </html>
